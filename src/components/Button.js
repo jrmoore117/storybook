@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = ({ label }) => {
+const Button = ({ color, label }) => {
    return (
-      <button className="px-2 outline-none bg-red-500">
+      <button className={`btn btn-${color}`}>
          {label}
       </button>
   );

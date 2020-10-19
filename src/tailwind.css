@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* BASE BUTTON */
+.btn {
+   @apply py-2 px-4 rounded-md font-sans text-white transition duration-100 ease-in-out;
+}
+
+/* RED BUTTON */
+.btn-red {
+   @apply bg-red-500 shadow-red border-red-500 border-2;
+}
+.btn-red:active {
+   @apply bg-red-600;
+}
+.btn-red:focus {
+   @apply outline-none shadow-outlineRed border-red-600 border-2;
+}
+
+/* ROSE BUTTON */
+.btn-rose {
+   @apply bg-rose-500 shadow-rose border-rose-500 border-2;
+}
+.btn-rose:active {
+   @apply bg-rose-600;
+}
+.btn-rose:focus {
+   @apply outline-none shadow-outlineRose border-rose-600 border-2;
+}
+
+/* ORANGE BUTTON */
+.btn-orange {
+   @apply bg-orange-500 shadow-orange border-orange-500 border-2;
+}
+.btn-orange:active {
+   @apply bg-orange-600;
+}
+.btn-orange:focus {
+   @apply outline-none shadow-outlineOrange border-orange-600 border-2;
+}
+
+/* YELLOW BUTTON */
+.btn-yellow {
+   @apply bg-yellow-500 shadow-yellow border-yellow-500 border-2;
+}
+.btn-yellow:active {
+   @apply bg-yellow-600;
+}
+.btn-yellow:focus {
+   @apply outline-none shadow-outlineYellow border-yellow-600 border-2;
+}
+
+/* GREEN BUTTON */
+.btn-green {
+   @apply bg-green-500 shadow-green border-green-500 border-2;
+}
+.btn-green:active {
+   @apply bg-green-600;
+}
+.btn-green:focus {
+   @apply outline-none shadow-outlineGreen border-green-600 border-2;
+}
+
+/* SKY BUTTON */
+.btn-sky {
+   @apply bg-sky-500 shadow-sky border-sky-500 border-2;
+}
+.btn-sky:active {
+   @apply bg-sky-600;
+}
+.btn-sky:focus {
+   @apply outline-none shadow-outlineSky border-sky-600 border-2;
+}
+
+/* BLUE BUTTON */
+.btn-blue {
+   @apply bg-blue-500 shadow-blue border-blue-500 border-2;
+}
+.btn-blue:active {
+   @apply bg-blue-600;
+}
+.btn-blue:focus {
+   @apply outline-none shadow-outlineBlue border-blue-600 border-2;
+}
+
+/* PURPLE BUTTON */
+.btn-purple {
+   @apply bg-purple-500 shadow-purple border-purple-500 border-2;
+}
+.btn-purple:active {
+   @apply bg-purple-600;
+}
+.btn-purple:focus {
+   @apply outline-none shadow-outlinePurple border-purple-600 border-2;
+}
+
+/* INDIGO BUTTON */
+.btn-indigo {
+   @apply bg-indigo-500 shadow-indigo border-indigo-500 border-2;
+}
+.btn-indigo:active {
+   @apply bg-indigo-600;
+}
+.btn-indigo:focus {
+   @apply outline-none shadow-outlineIndigo border-indigo-600 border-2;
+}

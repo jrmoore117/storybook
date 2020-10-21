@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({ color, label }) => {
    return (
-      <button className={`btn btn-${color}`}>
+      <button className={`button button-${color}`}>
          {label}
       </button>
   );

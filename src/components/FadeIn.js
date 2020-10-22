@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../index.css';
 
-const FadeIn = ({ direction, className, children }) => {
+const FadeIn = ({ id, direction, className, children }) => {
    const [isVisible, setVisible] = useState(false);
 
-   const domRef = React.useRef();
+   const domRef = useRef(id);
 
    useEffect(() => {
       const observer = new IntersectionObserver(entries => {
@@ -15,7 +15,7 @@ const FadeIn = ({ direction, className, children }) => {
    }, []);
 
    return (
-      <div ref={domRef} className={`fade-in ${isVisible && direction} ${className || ''}`}>
+      <div ref={domRef} className={`${direction} ${isVisible && 'fade-in'} ${className || ''}`}>
          {children}
       </div>
    );
